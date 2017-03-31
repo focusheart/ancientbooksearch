@@ -50,7 +50,7 @@ def create_book(code, title, info):
     return {'code':code, 'title':title, 'info':info}
 
 # ElasticSearch
-es = Elasticsearch('localhost')
+es = Elasticsearch('127.0.0.1')
 
 for record in records:
     if record==[]: continue
@@ -85,7 +85,7 @@ for record in records:
     book = create_book(code, title, info)
 
     # index the book
-    es.index(index="acientbooks", doc_type="book", body=book)
+    es.index(index="ancientbooks", doc_type="book", body=book)
     print 'Indexed %s \t%s' % (book['code'], book['title'])
     
     
