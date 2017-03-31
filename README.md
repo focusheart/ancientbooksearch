@@ -24,6 +24,6 @@ After running the script above, the meta data in `data.txt` will be read and sav
 
 or using Gunicorn:
 
-    gunicorn -w 2 -b 0.0.0.0:60423 server:app
+    gunicorn -w 2 -b 0.0.0.0:60407 server:app
 
 and using `Nginx` or `Apache` to do reverse proxy.
