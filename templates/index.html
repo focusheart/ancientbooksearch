@@ -134,6 +134,13 @@ function update_view(data){
 }
 
 $(document).ready(function(){
+    $('#keyword').keydown(function(evt){
+        var key = evt.which;
+        if (key==13) {
+            $('#submit').click();
+            return false;
+        }
+    });
     $('#submit').mousedown(function(evt){
         $(this).css('background-position','3px 3px');
     }).mouseup(function(){
