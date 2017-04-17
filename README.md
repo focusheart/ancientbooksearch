@@ -28,3 +28,5 @@ or using Gunicorn:
 
 and using `Nginx` or `Apache` to do reverse proxy.
 I have a demo running on [http://ancientbook.9lou.org](http://ancientbook.9lou.org/).
+
+![Screenshot](https://raw.githubusercontent.com/focusheart/ancientbooksearch/master/static/img/demo.png)
